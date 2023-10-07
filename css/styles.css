@@ -126,8 +126,6 @@ a span {
 }
 .address {
   font-style: normal;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .link-address {
   color: var(--primary-slate-color);
@@ -167,7 +165,7 @@ a span {
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 496px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -208,6 +206,7 @@ a span {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .section-title {
   color: var(--primary-navyblue-color);
@@ -311,6 +310,7 @@ header {
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navigation {
   display: flex;
@@ -606,7 +606,7 @@ footer {
   padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden .modal {
-  transform: translateX(-50%) translateY(-70%);
+  transform: translateX(-50%) translateY(-50%);
   opacity: 0;
 }
 .modal-button {
@@ -739,7 +739,12 @@ footer {
 .checkbox-form:checked + .checkbox-label > .span-checkbox {
   background-color: var(--active-link-color);
   border: none;
-  fill: var(--light-background-color);
+}
+.svg-checkbox-focus {
+  position: absolute;
+}
+.svg-checkbox-focus:focus {
+  fill: var(--LIGHT-SLATE);
 }
 
 .link-modal {
@@ -827,67 +832,68 @@ footer {
 .svg-plane {
   margin-left: 16px;
 }
+/* @media screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .advantages-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .section-one-icon {
+    opacity: 0;
+  }
 
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.advantages {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-.advantages-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.section-one-icon {
-  opacity: 0;
-}
-
-.advantages-title {
-  text-align: center;
-  font-family: Roboto;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-}
-.advantages-text {
-  align-self: stretch;
-}
-.team {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-.team-card {
-  gap: 72px;
-}
-.team-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 28px;
-  padding-right: 28px;
-}
-.portfolio {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-.card-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 48px;
-  padding-left: 16px;
-  padding-right: 16px;
+  .advantages-title {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .advantages-text {
+    align-self: stretch;
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .team-card {
+    gap: 72px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -909,4 +915,4 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
+} */
